@@ -10,7 +10,7 @@
 
 	<groupId>tech.lapsa.lapsa</groupId>
 	<artifactId>lapsa-payara-bom</artifactId>
-	<version>4.1.2-SNAPSHOT</version>
+	<version>4.1.2-b1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Lapsa : Payara 4.1 BOM</name>
@@ -19,6 +19,7 @@
 		<payara.hibernate.validator.version>5.2.4.Final</payara.hibernate.validator.version>
 		<payara.javax.el.version>3.0.1-b03</payara.javax.el.version>
 		<payara.jersey.version>2.25.1</payara.jersey.version>
+		<payara.jackson.version>2.8.8</payara.jackson.version>
 	</properties>
 
 
@@ -41,6 +42,31 @@
 				<groupId>org.glassfish</groupId>
 				<artifactId>javax.el</artifactId>
 				<version>${payara.javax.el.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-base</artifactId>
+				<version>${payara.jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${payara.jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${payara.jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${payara.jackson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${payara.jackson.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
