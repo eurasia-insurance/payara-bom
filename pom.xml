@@ -8,12 +8,12 @@
 		<version>3.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>tech.lapsa.lapsa</groupId>
-	<artifactId>lapsa-payara-bom</artifactId>
+	<groupId>tech.lapsa.payara</groupId>
+	<artifactId>payara-bom</artifactId>
 	<version>4.1.2-b1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Lapsa : Payara 4.1 BOM</name>
+	<name>Payara Lib : 4.1.2.173 BOM</name>
 
 	<properties>
 		<payara.hibernate.validator.version>5.2.4.Final</payara.hibernate.validator.version>
@@ -76,14 +76,14 @@
 	</dependencyManagement>
 
 	<scm>
-		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/lapsa/payara-bom.git</connection>
-		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/lapsa/payara-bom.git</developerConnection>
+		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/bom.git</connection>
+		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/bom.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>gitlab</system>
-		<url>https://gitlab.lapsa.tech/lapsa/lapsa/payara-bom/issues</url>
+		<url>https://gitlab.lapsa.tech/lapsa/payara/bom/issues</url>
 	</issueManagement>
 
 </project>
