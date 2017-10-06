@@ -26,6 +26,7 @@
 	<dependencyManagement>
 		<!-- see here https://github.com/payara/Payara/blob/payara-blue-4.1.2.173/nucleus/pom.xml -->
 		<dependencies>
+			<!-- jersey -->
 			<dependency>
 				<groupId>org.glassfish.jersey</groupId>
 				<artifactId>jersey-bom</artifactId>
@@ -33,16 +34,19 @@
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
+			<!-- hibernate-validator -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
 				<version>${payara.hibernate.validator.version}</version>
 			</dependency>
+			<!-- javax.el -->
 			<dependency>
 				<groupId>org.glassfish</groupId>
 				<artifactId>javax.el</artifactId>
 				<version>${payara.javax.el.version}</version>
 			</dependency>
+			<!-- jackson -->
 			<dependency>
 				<groupId>com.fasterxml.jackson.jaxrs</groupId>
 				<artifactId>jackson-jaxrs-base</artifactId>
