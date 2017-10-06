@@ -16,7 +16,9 @@
 	<name>Lapsa : Payara 4.1 BOM</name>
 
 	<properties>
-		<hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+		<payara.hibernate-validator.version>5.2.4.Final</payara.hibernate-validator.version>
+		<payara.jersey-bean-validation.version>2.25.1</payara.jersey-bean-validation.version>
+		<payara.javax.el.version>3.0.1-b03</payara.javax.el.version>
 	</properties>
 
 	<dependencyManagement>
@@ -24,7 +26,17 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
-				<version>${hibernate-validator.version}</version>
+				<version>${payara.hibernate-validator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.ext</groupId>
+				<artifactId>jersey-bean-validation</artifactId>
+				<version>${payara.jersey-bean-validation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish</groupId>
+				<artifactId>javax.el</artifactId>
+				<version>${payara.javax.el.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
