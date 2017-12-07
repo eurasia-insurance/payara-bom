@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>tech.lapsa.maven</groupId>
@@ -14,16 +15,18 @@
 
 	<name>Payara Lib : 4.1.2.173 BOM</name>
 
+	<!-- Full list of Payara dependencies see here https://github.com/payara/Payara/blob/payara-blue-4.1.2.173/appserver/pom.xml -->
 	<properties>
 		<payara.hibernate.validator.version>5.2.4.Final</payara.hibernate.validator.version>
 		<payara.javax.el.version>3.0.1-b03</payara.javax.el.version>
 		<payara.jersey.version>2.25.1</payara.jersey.version>
 		<payara.jackson.version>2.8.8</payara.jackson.version>
+		<!-- Actualy Payara 4.1.2.173 uses patched version of eclipselink 2.6.4.payara-p2, 
+			but it is not accessible on public repos -->
+		<eclipselink.version>2.6.4</eclipselink.version>
 	</properties>
 
-
 	<dependencyManagement>
-		<!-- see here https://github.com/payara/Payara/blob/payara-blue-4.1.2.173/nucleus/pom.xml -->
 		<dependencies>
 			<!-- jersey -->
 			<dependency>
@@ -44,6 +47,52 @@
 				<groupId>org.glassfish</groupId>
 				<artifactId>javax.el</artifactId>
 				<version>${payara.javax.el.version}</version>
+			</dependency>
+			<!-- eclipselink -->
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.core</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.jpa</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.jpa.jpql</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.moxy</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.sdo</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.dbws</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.oracle</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.antlr</artifactId>
+				<version>${eclipselink.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>org.eclipse.persistence.asm</artifactId>
+				<version>${eclipselink.version}</version>
 			</dependency>
 			<!-- jackson -->
 			<dependency>
