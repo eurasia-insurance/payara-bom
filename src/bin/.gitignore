@@ -1,2 +1,3 @@
 *.pom
 *.jar
+.localsettings.sh
