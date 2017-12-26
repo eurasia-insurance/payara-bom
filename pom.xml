@@ -9,7 +9,7 @@
 
 	<groupId>tech.lapsa.payara</groupId>
 	<artifactId>payara-bom</artifactId>
-	<version>4.1.2-2-SNAPSHOT</version>
+	<version>4.1.2-2</version>
 	<packaging>pom</packaging>
 
 	<name>Payara Lib : 4.1.2.173 BOM</name>
@@ -129,7 +129,7 @@
 	<scm>
 		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/bom.git</connection>
 		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/bom.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v4.1.2-2</tag>
 	</scm>
 
 	<issueManagement>
