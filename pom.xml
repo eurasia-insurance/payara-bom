@@ -127,9 +127,9 @@
 	</dependencyManagement>
 
 	<scm>
-		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/bom.git</connection>
-		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/payara/bom.git</developerConnection>
-		<tag>v4.1.2-2</tag>
+		<connection>scm:git:https://github.com/eurasia-insurance/payara-bom.git</connection>
+		<developerConnection>scm:git:https://github.com/eurasia-insurance/payara-bom.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
