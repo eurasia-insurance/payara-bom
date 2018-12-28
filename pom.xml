@@ -9,7 +9,7 @@
 
 	<groupId>tech.lapsa.payara</groupId>
 	<artifactId>payara-bom</artifactId>
-	<version>4.1.2-2</version>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Payara Lib : 4.1.2.173 BOM</name>
