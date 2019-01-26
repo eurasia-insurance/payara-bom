@@ -9,7 +9,7 @@
 
 	<groupId>tech.lapsa.payara</groupId>
 	<artifactId>payara-bom</artifactId>
-	<version>20190126r1</version>
+	<version>CURRENT-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Payara Lib : 4.1.2.173 BOM</name>
@@ -129,7 +129,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/eurasia-insurance/payara-bom.git</connection>
 		<developerConnection>scm:git:https://github.com/eurasia-insurance/payara-bom.git</developerConnection>
-		<tag>v20190126r1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
